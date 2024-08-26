@@ -1,0 +1,173 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* mac dinh la 16px */
+}
+/* ------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+
+/* -------------HEADER--------------- */
+.left-header{
+    width: 25%;
+   float: left;
+   
+}
+.logo {
+    width: 250px;
+    margin-top: -40px;
+    
+
+}
+#header{
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.8) 55%, rgba(45, 95, 93, 0.85)), url("../img/background4.jpeg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+}
+.center_header{
+    width: 49.5%;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+}
+
+
+.center_header li{
+    display: inline;
+    text-align: center;
+    padding-right: 16px;
+    line-height: 100px;
+}
+.center_header li:hover a{
+    border-bottom: 2px solid #ccc;
+
+}
+.center_header li a{
+    color: white;
+    text-decoration: none;
+    font-weight:700 ;
+    transition: border-bottom 0.5s;
+}
+.right_header{
+    float: right;
+    width: 25%;
+    position: relative;    
+    padding-left: 50px;
+}
+input {
+    margin-top: 30px;;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    color: white;
+    border-radius: 45px;
+    padding: 5px 15px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.553);
+}
+.icon{
+    display: inline-block;
+    padding-left: 16px;
+    color: white;
+}
+.hoc{
+    padding-top:46px;
+    height: 500px;
+    
+   
+}
+.pt-46{
+    padding-top: 46px;
+}
+.picture-title{
+    display: inline-block;
+    margin-left: 5%;
+    height: 150px;
+    background-color: aqua;
+    position: relative;
+}
+.picture-title img{
+    width: 90%;
+    border-radius: 10%;
+    
+}
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+    cursor: pointer;
+
+}
+.card:hover {
+    transform: translateY(-10px); /* Thẻ nâng lên 10px khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ mờ của bóng đổ */
+}
+.hoc{
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách giữa các thẻ */
+    margin: 20px;
+    margin-right: 5%;
+    color: red;
+}
+.card-header {
+    
+    color: white;
+    text-align: center;
+    
+}
+
+.card-body {
+    padding: 20px;
+    line-height: 30px;
+}
+.card-body p:first-child{
+   color:black;
+   font-size: 20px;
+   font-weight: 500;
+
+}
+
+.card-body p {
+    font-size: 18px;
+    color: red;
+    margin: 10px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stats span {
+    font-size: 14px;
+    color: #555;
+}
+
+.stats i {
+    margin-right: 5px;
+}
